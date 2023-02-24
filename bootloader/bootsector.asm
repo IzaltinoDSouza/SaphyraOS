@@ -62,14 +62,14 @@ BOOTSY_FILENAME_LEN EQU $-bootsy_filename
 drive_num:
 	db 0
 fat32_data_sector:
-	dw 0
+	dd 0
 
 ;fail message
 find_bootsy_fail_msg:
 	db "boot.sy not found",0
 read_bootsy_fail_msg:
 	db "read boot.sy fail",0
-fat32_fail:
+fat32_fail_msg:
 	db "fat32 fail",0
 everything_fail_msg:
 	db "Everything fails",0
@@ -141,7 +141,7 @@ everything_fail:
 
 load_bpb_fail:
 fat32_read_cluster_fail_root_cluster:
-	mov si,fat32_fail
+	mov si,fat32_fail_msg
 	call bios_printstr
 	cli
 	hlt
