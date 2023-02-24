@@ -15,6 +15,14 @@ mformat -v SaphyraOS -F -i disk_image.img
 nasm -fbin bootloader/bootsector.asm -o bin/bootsector
 ```
 
+## Steps to build saphyra_fs
+```bash
+cd tools/saphyra_fs
+gcc main.c -o saphyra_fs
+mv saphyra_fs ../../saphyra_fs
+cd ../../
+```
+
 ## Steps to put bootsector into fat32.bootcode
 ```bash
 ./saphyra_fs disk_image.img --bootcode 'bin/bootsector'
