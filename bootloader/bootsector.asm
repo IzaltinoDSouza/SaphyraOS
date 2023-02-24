@@ -1,3 +1,7 @@
+;SaphyraOS © All Right Reserved
+;Author  : IzaltinoDSouza
+;Date    : February 13,2023
+
 [bits 16]
 [org 0x7c5a]		;0x7c00 + 0x5a  
 					;BIOS load bootcode memory address 0x7c00

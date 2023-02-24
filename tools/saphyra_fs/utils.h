@@ -1,3 +1,8 @@
+/*
+	SaphyraOS © All Right Reserved
+	Author  : IzaltinoDSouza
+	Date    : February 24,2023
+*/
 #pragma once
 
 #include <string.h>

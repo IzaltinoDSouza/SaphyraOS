@@ -1,3 +1,9 @@
+/*
+	SaphyraOS © All Right Reserved
+	Author  : IzaltinoDSouza
+	Date    : February 13,2023 (original)
+			  February 24,2023 (rewrite)
+*/
 #pragma once
 
 #include <stdint.h>
