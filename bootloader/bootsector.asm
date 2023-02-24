@@ -2,6 +2,10 @@
 ;Author  : IzaltinoDSouza
 ;Date    : February 13,2023
 
+;It's essential to emphasize that due to the lack of real hardware testing.
+;I recommend that only run the binary of this code in a virtual machine environment
+;such as qemu,bochs or similar.
+
 [bits 16]
 [org 0x7c5a]		;0x7c00 + 0x5a  
 					;BIOS load bootcode memory address 0x7c00
