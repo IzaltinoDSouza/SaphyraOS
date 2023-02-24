@@ -3,7 +3,7 @@ SaphyraOS will be a simple OS, only for me to learn the basic about OS Developme
 
 ## Steps to create a fat32 image
 ```bash
-fallocated -l 256M disk_image.img
+fallocate -l 256M disk_image.img
 ```
 
 ```bash
@@ -22,5 +22,5 @@ nasm -fbin bootloader/bootsector.asm -o bin/bootsector
 
 ## Run it with Qemu
 ```bash
-qemu-system-x86_84 -drive format=raw,file=disk_image.img
+qemu-system-x86_64 -drive format=raw,file=disk_image.img
 ```
