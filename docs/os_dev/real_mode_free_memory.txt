@@ -1,0 +1,3 @@
+0x0500 ... 0x7BFF  30    KiB   (free)
+0x7C00 ... 0x7DFF  512   bytes (bootsector)
+0x7e00 ... 0x7ffff 480.5 KiB   (free)
