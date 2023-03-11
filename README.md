@@ -28,10 +28,17 @@ cd ../../
 ./saphyra_fs disk_image.img --bootcode 'bin/bootsector'
 ```
 
-## Steps to build bootsy (stage 2)
+## Steps to build boot.sy (stage 2)
 ```bash
 cd bootloader
 nasm -fbin bootsy.asm -o ../bin/boot.sy
+cd ..
+```
+
+## Steps to build kernel.sy
+```bash
+cd kernel
+nasm -fbin kernel.asm -o ../bin/kernel.sy
 cd ..
 ```
 
@@ -40,6 +47,8 @@ cd ..
 mkdir SaphyraOS
 sudo mount -o loop disk_image.img SaphyraOS
 sudo mv bin/boot.sy SaphyraOS/boot.sy
+sudo mkdir SaphyraOS/sy
+sudo mv bin/kernel.sy SaphyraOS/sy/kernel.sy
 sudo umount SaphyraOS
 ```
 
